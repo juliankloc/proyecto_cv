@@ -6,50 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Julian Kloc</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/icon_66121.png">
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- LINK AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Open Graph data -->
     <meta property="og:title" content="Portfolio Julian Kloc" />
     <meta property="og:type" content="landing page" />
     <meta property="og:url" content=" " />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/112030550?v=4" />
-    <meta property="og:description" content="Este es el portfolio digital de Julian Kloc, donde podras encontrar sus proyectos, cv, etc." />
+    <meta property="og:description"
+        content="Este es el portfolio digital de Julian Kloc, donde podras encontrar sus proyectos, cv, etc." />
 </head>
 
 <body>
     <!--contenido del header-->
     <header>
-        <h1>Julian Kloc Frontend Dev</h1>
+        <h1 class="titulo">Julian Kloc Frontend Dev</h1>
     </header>
     <!--comienza el main-->
     <main>
-        <div>
-            <img src="./assets/img/sf.jpg" height="250" width="auto" alt="foto-portada">
+        <div class="foto-portada">
+            <img src="./assets/img/sf.jpg" height="250" class="rounded mx-auto d-block" alt="foto-portada">
         </div>
-        <div>
+        <div class="mp">
             <h2>Mis Proyectos</h2>
             <ol>
-                <li>
-                    <a href="https://juliankloc.github.io/proyecto_julian_kloc/" target="_blank">Portfolio Musical
+                <li class="p1">
+                    <a href="https://juliankloc.github.io/proyecto_julian_kloc/" target="_blank">Portfolio Musical con
                         Flexbox &
                         Grid</a>
-                    <a href="https://github.com/juliankloc/proyecto_julian_kloc" target="_blank">Repositorio</a>
+                    <a class="btn btn-primary" href="https://github.com/juliankloc/proyecto_julian_kloc" target="_blank" role="button">Repositorio</a>
                 </li>
-                <li>
-                    <a href="https://juliankloc.github.io/proyecto_jk_bootstrap/" target="_blank">Portfolio Musical
+                <li class="p2">
+                    <a href="https://juliankloc.github.io/proyecto_jk_bootstrap/" target="_blank">Portfolio Musical con
                         Booststrap</a>
-                    <a href="https://github.com/juliankloc/proyecto_jk_bootstrap" target="_blank">Repositorio</a>
+                        <a class="btn btn-primary" href="https://github.com/juliankloc/proyecto_jk_bootstrap/" target="_blank" role="button">Repositorio</a>
                 </li>
             </ol>
         </div>
-        <div>
+        <div class="detalles">
             <div>
                 <h3>Sobre Mi</h3>
-            </div>
-            <div>
                 <h3>Descargar CV</h3>
             </div>
         </div>
-        <div>
+        <div class="hab">
             <ul>
                 <div>
                     <h3>Habilidades</h3>
@@ -62,11 +68,19 @@
             </ul>
         </div>
         <div>
-            <form action=""></form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Contactame</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
         </div>
     </main>
     <!--mi footer-->
-    <footer>
+    <footer class="redes">
         <h4>Redes</h4>
         <ul>
             <li>
@@ -80,6 +94,15 @@
             </li>
         </ul>
     </footer>
+    <!--LINK DE BT JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!--LINKS AOS-->
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

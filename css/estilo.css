@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+.titulo{
+    justify-content: center;
+    display: flex;
+    padding: 3rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.foto-portada{
+    justify-content: center;
+    display: flex;
+    padding: 3rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.p1 {
+    margin: 2rem;
+}
+
+.p2 {
+    margin: 2rem;
+}
+
+.mp {
+    padding: 3rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.detalles {
+    padding: 3rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.hab {
+    padding: 3rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.mb-3{
+    padding: 1rem;
+    border: 5rem;
+    margin: 2rem;
+}
+
+.btn-primary{
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.redes {
+    justify-content: space-around;
+    display: flex;
+}
