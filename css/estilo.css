@@ -1,7 +1,11 @@
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,7 +68,17 @@ body {
     text-align: left;
 }
 
-
+.botones {
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem;
+    text-decoration: none;
+    width: 30rem;
+    text-align: center;
+    border: 0.5rem solid #000;
+    border-radius: 20rem;
+    background-color: #fff;
+}
 
 .hab {
     height: 100px;
