@@ -80,17 +80,14 @@ h2 {
     padding: 30px;
 }
 
-ul {
+ul li {
     list-style: none;
+    display: inline;
 }
 
 li a img {
     width: 35px;
     height: 35px;
-}
-
-ul li a {
-    justify-content: center;
 }
 
 footer {
