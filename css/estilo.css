@@ -1,67 +1,56 @@
-html {
-    font-size: 62.5%;
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
-.titulo{
-    justify-content: center;
-    display: flex;
-    padding: 3rem;
-    border: 5rem;
-    margin: 2rem;
+body {
+    display: inline-block; 
 }
 
-.foto-portada{
-    justify-content: center;
-    display: flex;
-    padding: 3rem;
-    border: 5rem;
-    margin: 2rem;
-}
-
-.p1 {
-    margin: 2rem;
-}
-
-.p2 {
-    margin: 2rem;
-}
-
-.mp {
-    padding: 3rem;
-    border: 5rem;
-    margin: 2rem;
-}
-
-.detalles {
-    padding: 3rem;
-    border: 5rem;
-    margin: 2rem;
-}
-
-.hab {
-    padding: 3rem;
-    border: 5rem;
-    margin: 2rem;
-}
-
-.mb-3{
-    padding: 1rem;
-    border: 5rem;
-    margin: 2rem;
-}
-
-.btn-primary{
-    padding: 1rem;
-    margin: 1rem 1rem 1rem 0rem;
-}
-
-.redes {
-    justify-content: space-around;
-    display: flex;
-}
-
-@media screen and (max-width:576px) {
-    html {
-    display: flex; justify-content: center;
-    }
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". titulo titulo titulo titulo ."
+      "proyectos proyectos proyectos proyectos foto foto"
+      "proyectos proyectos proyectos proyectos foto foto"
+      ". sm sm cv cv ."
+      ". . hab hab . ."
+      "h c s g gh n"
+      ". contacto contacto contacto contacto ."
+      ". sobreMi sobreMi sobreMi sobreMi ."
+      "footer footer footer footer footer footer";
+  }
+  
+  .titulo { grid-area: titulo; }
+  
+  .proyectos { grid-area: proyectos; }
+  
+  .foto { grid-area: foto; }
+  
+  .sm { grid-area: sm; }
+  
+  .cv { grid-area: cv; }
+  
+  .hab { grid-area: hab; }
+  
+  .h { grid-area: h; }
+  
+  .c { grid-area: c; }
+  
+  .s { grid-area: s; }
+  
+  .g { grid-area: g; }
+  
+  .gh { grid-area: gh; }
+  
+  .n { grid-area: n; }
+  
+  .contacto { grid-area: contacto; }
+  
+  .sobreMi { grid-area: sobreMi; }
+  
+  .footer { grid-area: footer; }
+  
