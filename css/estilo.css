@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
@@ -10,47 +11,91 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.3fr 1.5fr 2fr 1fr 0.2fr;
     gap: 0px 0px;
     grid-template-areas:
-      ". titulo titulo titulo titulo ."
-      "proyectos proyectos proyectos proyectos foto foto"
-      "proyectos proyectos proyectos proyectos foto foto"
-      ". sm sm cv cv ."
-      ". . hab hab . ."
-      "h c s g gh n"
-      ". sobreMi sobreMi sobreMi sobreMi ."
-      ". contacto contacto contacto contacto ."
-      "footer footer footer footer footer footer";
-  }
-  
-  .titulo { grid-area: titulo; }
-  
-  .proyectos { grid-area: proyectos; }
-  
-  .foto { grid-area: foto; }
-  
-  .sm { grid-area: sm; }
-  
-  .cv { grid-area: cv; }
-  
-  .hab { grid-area: hab; }
-  
-  .h { grid-area: h; }
-  
-  .c { grid-area: c; }
-  
-  .s { grid-area: s; }
-  
-  .g { grid-area: g; }
-  
-  .gh { grid-area: gh; }
-  
-  .n { grid-area: n; }
-  
-  .sobreMi { grid-area: sobreMi; }
-  
-  .contacto { grid-area: contacto; }
-  
-  .footer { grid-area: footer; }
-  
+        ". titulo titulo titulo titulo ."
+        "proyectos proyectos proyectos proyectos foto foto"
+        "proyectos proyectos proyectos proyectos foto foto"
+        ". sm sm cv cv ."
+        ". . hab hab . ."
+        "h c s g gh n"
+        ". sobreMi sobreMi sobreMi sobreMi ."
+        ". contacto contacto contacto contacto ."
+        "footer footer footer footer footer footer";
+    }
+    
+    .titulo { grid-area: titulo; }
+    
+    .proyectos { grid-area: proyectos; }
+    
+    .foto { grid-area: foto; }
+    
+    .sm { grid-area: sm; }
+    
+    .cv { grid-area: cv; }
+    
+    .hab { grid-area: hab; }
+    
+    .h { grid-area: h; }
+    
+    .c { grid-area: c; }
+    
+    .s { grid-area: s; }
+    
+    .g { grid-area: g; }
+    
+    .gh { grid-area: gh; }
+    
+    .n { grid-area: n; }
+    
+    .sobreMi { grid-area: sobreMi; }
+    
+    .contacto { grid-area: contacto; }
+    
+    .footer { grid-area: footer; }
+
+
+.centrado {
+    text-align: center;
+}
+
+.foto {
+    text-align: left;
+}
+
+
+
+.hab {
+    height: 100px;
+}
+
+h1 {
+    margin: 40px;
+    padding: 40px;
+}
+
+h2 {
+    margin: 30px;
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a img {
+    width: 35px;
+    height: 35px;
+}
+
+ul li a {
+    justify-content: center;
+}
+
+footer {
+    text-align: right; bottom: ;
+    margin: 20px;
+    justify-content: space-between;
+    box-sizing: 100%;
+}
