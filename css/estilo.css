@@ -19,8 +19,8 @@ body {
       ". sm sm cv cv ."
       ". . hab hab . ."
       "h c s g gh n"
-      ". contacto contacto contacto contacto ."
       ". sobreMi sobreMi sobreMi sobreMi ."
+      ". contacto contacto contacto contacto ."
       "footer footer footer footer footer footer";
   }
   
@@ -48,9 +48,9 @@ body {
   
   .n { grid-area: n; }
   
-  .contacto { grid-area: contacto; }
-  
   .sobreMi { grid-area: sobreMi; }
+  
+  .contacto { grid-area: contacto; }
   
   .footer { grid-area: footer; }
   
